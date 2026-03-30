@@ -1,0 +1,29 @@
+.box{
+    display: grid;
+    place-items: center;
+    background-color: rgb(110, 84, 28);
+    width: 100px;
+    height: 100px;
+}
+
+.grid-container{
+    display: grid;
+    /* place-items: center; */
+    grid-gap: 50px;
+    width: 400px;
+    height: auto;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.result-container{
+    display: grid;
+}
+
+.background{
+    display: grid;
+    place-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: green;
+}
