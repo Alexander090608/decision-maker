@@ -1,4 +1,4 @@
-.box{
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9{
     display: grid;
     place-items: center;
     background-color: rgb(110, 84, 28);
@@ -6,9 +6,13 @@
     height: 100px;
 }
 
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover{
+    background-color: rgb(183, 151, 34);
+    cursor: pointer;
+}
+
 .grid-container{
     display: grid;
-    /* place-items: center; */
     grid-gap: 50px;
     width: 400px;
     height: auto;
@@ -17,7 +21,11 @@
 }
 
 .result-container{
-    display: grid;
+    display: none;
+    place-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(177, 177, 177)                                                   ;
 }
 
 .background{
@@ -27,3 +35,12 @@
     height: 500px;
     background-color: green;
 }
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+ 
