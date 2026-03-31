@@ -11,7 +11,7 @@
     cursor: pointer;
 }
 
-.grid-container{
+.field{
     display: grid;
     grid-gap: 50px;
     width: 400px;
@@ -25,7 +25,8 @@
     place-items: center;
     width: 500px;
     height: 500px;
-    background-color: rgb(177, 177, 177)                                                   ;
+    background-color: rgb(177, 177, 177);
+    overflow-y: scroll;
 }
 
 .background{
