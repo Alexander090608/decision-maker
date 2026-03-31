@@ -6,24 +6,16 @@ async function getInfo(file) {
     let mealName = data.meals[0].strMeal; //data.(first element of data array).(meal name)
     let mealImg = data.meals[0].strMealThumb; //data.(first element of data array).(meal image)
     let mealInstructions = data.meals[0].strInstructions; //data.(first element of data array).(meal instructions)
-    console.log(data.meals[0].strMeal);
-    console.log(data.meals[0].strMealThumb);
-    console.log(data.meals[0].strInstructions);
 
     //result container
     let grid = document.querySelector(".result-container");
     if (grid) {
-        createMealDisplay(mealName, mealImg, mealInstructions);
-    }
-
-    function createMealDisplay(mealName, mealImg, mealInstructions) {
         grid.innerHTML = `
             <h2>${mealName}</h2>
             <img style="width: 200px; height: 200px;" src="${mealImg}" alt="Meal Image">
             <p>${mealInstructions}</p>
         `
     }
-
 }
 
 function boxClick() {

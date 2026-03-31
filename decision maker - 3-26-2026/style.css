@@ -1,4 +1,12 @@
-.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9{
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9 {
     display: grid;
     place-items: center;
     background-color: rgb(110, 84, 28);
@@ -6,12 +14,25 @@
     height: 100px;
 }
 
-.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover{
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover,
+.box7:hover,
+.box8:hover,
+.box9:hover {
     background-color: rgb(183, 151, 34);
     cursor: pointer;
 }
 
-.field{
+header h1,
+header h2 {
+    text-align: center;
+}
+
+.field {
     display: grid;
     grid-gap: 50px;
     width: 400px;
@@ -20,7 +41,7 @@
     grid-template-rows: repeat(3, 100px);
 }
 
-.result-container{
+.result-container {
     display: none;
     place-items: center;
     width: 500px;
@@ -29,7 +50,7 @@
     overflow-y: scroll;
 }
 
-.background{
+.background {
     display: grid;
     place-items: center;
     width: 500px;
@@ -37,11 +58,42 @@
     background-color: green;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
- 
+.daily-food {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid black;
+}
+
+.daily-food-text {
+    font-size: 40px;
+    text-align: center;
+}
+
+.food1,
+.food2,
+.food3 {
+    width: 400px;
+    height: 100px;
+    background-color: rgb(215, 157, 32);
+}
+
+@media (max-width: 1200px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
